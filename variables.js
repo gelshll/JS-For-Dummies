@@ -59,11 +59,11 @@ let miUndefined = undefined;    // Además de ser un valor también es un tipo d
 // El operador typeof nos sirve para saber o 'preguntar' de que tipo de dato es una variable
 console.log(typeof miUndefined);    // undefined
 
-// El concepto de hoisting significa que podemos primero utilizar una varianle y después de usarla podemos declararla
+// El concepto de hoisting significa que podemos primero utilizar una variable y después de usarla podemos declararla
 // Ya que cuando trabajamos con variables, una parte es declarar la variable y por otro lado es utilizarla
 var ejemploDeclaracion;
 ejemploDeclaracion = 'Some';
-// Normalmente antes de usar una variable, antes se tiene que declarar
+// Normalmente antes de usar una variable se tiene que declarar
 
 // Hoisting lo que significa es que las declaraciones de una variable pueden estar en cualquier parte del programa
 // Y todas las declaraciones de las variables al momento en que se ejecuta nuestro programa
