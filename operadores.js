@@ -35,13 +35,13 @@ c = a++ * b; // La variable 'a' en esta línea sigue con el valor de 9, cuando s
 // (variable--) post-decremento
 d = a / b--; // La variable b en esta línea conserva el valor de 5 y la variable a tendrá el valor de 10 por su incremento pendiente
 
-// Para asignar valores a nuestras variables usamos el operador de asignación (=)
+// (=) operador de asignación, para asignar valores a nuestras variables usamos este operador
 let age = 19;
 // Pero también existen operadores de asignación compuestos
 age += 1;   // Esto equivale a age = age + 1
 age -= 1;   // Esto equivale a age = age - 1 y así con los demás operadores de asignación compuestos
 // El operador de asignación compuesto sí modifica el valor de la variable
-// Otros operadores compuestos +=, -=, *=, /=, %=, **=
+// Otros operadores compuestos: +=, -=, *=, /=, %=, **=
 
 // Operadores de comparación o relacionales
 // (==) operador de igualdad (valor) si es necesario realiza una conversión del tipo de dato para poder comparar los valores
