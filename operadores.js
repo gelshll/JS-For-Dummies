@@ -35,6 +35,7 @@ c = a++ * b; // La variable 'a' en esta línea sigue con el valor de 9, cuando s
 // (variable--) post-decremento
 d = a / b--; // La variable b en esta línea conserva el valor de 5 y la variable a tendrá el valor de 10 por su incremento pendiente
 
+// Operadores de asignación
 // (=) operador de asignación, para asignar valores a nuestras variables usamos este operador
 let age = 19;
 // Pero también existen operadores de asignación compuestos
