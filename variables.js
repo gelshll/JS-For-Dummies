@@ -3,6 +3,7 @@
 // El operador de asignación (=) nos permite asignar un valor a la variable
 // El punto y coma ; indica el final de una línea (ponerlo es opcional pero es una práctica común)
 let miVariable;  // Se podría inicializar en la misma linea
+// Si no asignamos un valor a esta variable, su valor por default será undefined
 miVariable = 'Hola Mundo';  // Al valor se le conoce como literal y es de un tipo de dato
 // La literal se guardará en una dirección de la memoria RAM con notación hexadecimal (en los frames, que son regiones de memoria)
 // Esta dirección va a ser cambiante ya que la RAM es una memoria volatil
@@ -59,15 +60,16 @@ let miUndefined = undefined;    // Además de ser un valor también es un tipo d
 // El operador typeof nos sirve para saber o 'preguntar' de que tipo de dato es una variable
 console.log(typeof miUndefined);    // undefined
 
-// El concepto de hoisting significa que podemos primero utilizar una variable y después de usarla podemos declararla
+// El concepto de hoisting
+// Este concepto significa que podemos primero utilizar una varianle y después de usarla podemos declararka
 // Ya que cuando trabajamos con variables, una parte es declarar la variable y por otro lado es utilizarla
 var ejemploDeclaracion;
 ejemploDeclaracion = 'Some';
-// Normalmente antes de usar una variable se tiene que declarar
+// Normalmente antes de usar una variable, antes se tiene que declarar
 
 // Hoisting lo que significa es que las declaraciones de una variable pueden estar en cualquier parte del programa
 // Y todas las declaraciones de las variables al momento en que se ejecuta nuestro programa
-// Se suben todas las declaraciones, se ponen al inicio de nuestro programa y por ello podemos trabajar con variables antes de haberlas declarado
+// Se suben todas las declaraciones, se ponen al inicio de nuestro programa y por ello podemos trabajar con variables antes de haberlas declarado.
 ejemploHoisting = 'Some';
 var ejemploHoisting;
 // No se recomienda usar var por este mismo concepto ya que es confuso
@@ -75,8 +77,7 @@ var ejemploHoisting;
 let ejemploLet = 9;
 // Si utilizamos let, esta variable ya no se puede volver a definir (let ejemploLet = 'Nueva definición da error')
 // Al usar let no aplica el concepto de hoisting (daría error)
-// Otra forma de restringir esto es agregando 'use strict' y con esto aplicamos el modo estricto en JavaScript (desactivamos el hoisting)
-
+// Otra forma de restringir esto es agregando 'use strict' al inicio del codigo y con esto aplicamos el modo estricto en JavaScript (desactivamos el hoisting)
 
 // Una constante es una variable, pero, una vez que hemos definido su valor ya no pdemos modificarlo
 // Usamos la palabra reservada const en lugar de 'let' o 'var'
