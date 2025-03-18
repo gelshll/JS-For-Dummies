@@ -87,3 +87,19 @@ console.log(false || false);    // false
 console.log(!true); // false
 console.log(!false);    // true
 
+// Ejemplo valor dentro de un rango con operadores logicos
+let minimo = 0, maximo = 10;    //  Se pueden inicializar ambas en la misma línea
+let dato = 7;
+let dentroRango = dato >= minimo && dato <= maximo; // true (ya que ambas expresiones son ciertas)
+
+// Precedencia de operadores
+// 1. Parentesis y corchetes
+// 2. Operadores unarios como -, ++, --, !
+// 3. Aritmeticos *, **, / y %
+// 4. Aritemticos + y -
+// 5. Relacionales <, <=, >, >=
+// 6. Igualdad == y !=
+// 7. Logicos || y &&
+// 8. Asignación =, +=, -=, *=, **=, /= y %=
+let precedencia = 12 / 3 + 3 * 2 - 1;   // 9 (al ser igual de prioritaria la división y la multiplicación, se evalúa primero la que está a la izquierda)
+// Las expresiones se evalúan de izquierda a derecha, por lo que la precedencia toma esa prioridad
