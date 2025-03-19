@@ -21,10 +21,10 @@ a = 8;
 b = 6;
 
 // (++variable) pre-incremento
-let preincremento = ++a;    // Incrementa en 1 el valor de la variable en esta misma expresión
+let preIncremento = ++a;    // Incrementa en 1 el valor de la variable en esta misma expresión
 
 // (--variable) pre-decremento
-let predecremento = --b;    // Decrementa en 1 el valor de la variable en esta misma expresión
+let preDecremento = --b;    // Decrementa en 1 el valor de la variable en esta misma expresión
 
 // Con el post-incremento y post-decremento primero se utiliza la variable
 // Y posteriormente la proxima vez que usemos esta variable, se realizará el incremento o decremento según el caso
