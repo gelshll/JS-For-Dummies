@@ -32,3 +32,41 @@ if (numero < 0)
     console.log(`${numero} es un valor negativo`);
 else
     console.log(`${numero} es un valor positivo`);
+
+// Bloque else if
+// Nos sirve para agregar mas condiciones (ilimitadas) entre un bloque if y un else (en caso de que haya un bloque else)
+if (numero > 0) {
+    // Si esta condición es true se ejecuta este bloque
+    console.log(`${numero} es un valor positivo`);
+}
+else if (numero < 0) {  // Bloque opcional
+    // Si no es suficiente con la primera condición, se agrega esta segunda
+    // Y en caso de que sea true se ejecuta únicamente este bloque else if y se omiten los demás bloques que vengan a continuación
+    console.log(`${numero} es un valor positivo`);
+}   // Podemos agregar cuantos bloques else if con nuevas condiciones necesitemos
+
+else {  // El bloque else en caso de que exista debe ir hasta el final
+    // En caso de que ninguna de las condiciones anteriores sea true, se ejecuta este bloque
+    console.log(`${numero} es 0`);
+}
+
+// Operador ternario
+// Es una simplificación de la sentencia if - else
+// Su sintaxis es la siguiente
+// condición ? caso true : caso false
+// Normalmente se utiliza para una codigo que quepa en una sola linea, si es de mas lineas se recomienda un bloque if - else completo
+console.log((numero > 0) ? 'es un valor positivo' : 'es cero o negativo');
+// No son necesarios los parentesis en la condición pero es recomendable para indicar que es una condición booleana
+
+// Ejercicio mayoría de edad con bloque if - else y operador ternario
+const MAYORIA_DE_EDAD = 18;
+let miEdad = 19;
+
+if (miEdad >= MAYORIA_DE_EDAD) {
+    console.log(`Mayor de edad ${miEdad}`);
+}   // Se puede agregar otra condicion (bloque else if) por si la edad es menor que 0
+else {
+    console.log(`Menor de edad ${miEdad}`);
+}
+// Con el uso del operador ternario
+console.log(miEdad >= MAYORIA_DE_EDAD ? `Mayor de edad ${miEdad}` : `Menor de edad ${miEdad}`)
