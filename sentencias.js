@@ -64,7 +64,7 @@ let miEdad = 19;
 
 if (miEdad >= MAYORIA_DE_EDAD) {
     console.log(`Mayor de edad ${miEdad}`);
-}   // Se puede agregar otra condicion (bloque else if) por si la edad es menor que 0
+}   // Se puede agregar otra condicion (bloque else if) en caso de que la edad sea menor que 0
 else {
     console.log(`Menor de edad ${miEdad}`);
 }
