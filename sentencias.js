@@ -70,3 +70,78 @@ else {
 }
 // Con el uso del operador ternario
 console.log(miEdad >= MAYORIA_DE_EDAD ? `Mayor de edad ${miEdad}` : `Menor de edad ${miEdad}`)
+
+// Sentencia switch
+// Es una variante simplificada de la sentencia if - else
+/*
+Ejemplo con sentencia if - else
+
+if (condicion) {
+    Bloque de codigo
+}
+else if (condicion 2) {
+    Bloque de codigo
+}
+else if (condicion 3) {
+    Bloque de codigo
+}
+else { Se podría decir que else es una sentencia por default
+    Bloque de codigo
+}
+*/
+
+// Sintaxis de la sentencia switch
+/*
+Ejemplo con sentencia switch
+
+El valor no es como tal una condición, es una variable a evaluar
+switch (valor a evaluar) {
+    case 1: Se revisa un caso (en caso de que el valor a evaluar sea exactamente igual a 1, por ejemplo)
+        Y si es dicho caso, se ejecuta el bloque de codigo
+        El valor a evaluar puede ser de cualquier tipo de dato no solo numerico
+        Bloque de codigo
+        break;  Con break rompemos la ejecución del caso 1
+        Si no usaramos break se seguirían ejecutando los demás casos sin revisar si coincide con el caso o no
+        No es requerido y si no se agrega se seguirán evaluando los demás casos hasta encontrar una sentencia break
+        O hasta que termine la sentencia switch
+
+    case 2:
+        Bloque de codigo
+        break;
+
+    default:    default es similar a la sentencia else del bloque if - else
+        Si llegamos al final de la sentencia switch es porque ningun caso coincidió
+        Y entonces ya no se revisa ninguna condicion y se ejecuta el bloque de la sentencia default
+        Bloque de codigo
+}
+*/
+
+// Ejercicio día de la semana con la sentencia switch
+let diaSemana = 1;
+
+switch (diaSemana) {
+    
+    case 1: // Es como si hicieramos diaSemana === 1 (no existe una conversión de tipos de datos)
+        console.log('Lunes');
+        break;  // Agregamos break para romper la ejecución de la sentencia switch en caso de que diaSemana sea igual a 1
+    case 2:
+        console.log('Martes');
+        break;
+    case 3:
+        console.log('Miercoles');
+        break;
+    case 4:
+        console.log('Jueves');
+        break;
+    case 5:
+        console.log('Viernes');
+        break;
+    case 6:
+        console.log('Sabado');
+        break;
+    case 7:
+        console.log('Domingo');
+        break;
+    default:
+        console.log(`Dia de la semana inexistente ${diaSemana}`);   // Se ejecuta si los casos anteriores no coincidieron
+}
