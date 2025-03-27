@@ -1,3 +1,5 @@
+// Una variable nos permite almacenar los datos de nuestros programas
+
 // La palabra reservada let nos permite declarar variables
 // Al nombre de la variable también se le conoce como identificador
 // El operador de asignación (=) nos permite asignar un valor a la variable
