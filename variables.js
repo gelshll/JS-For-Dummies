@@ -1,7 +1,7 @@
 // La palabra reservada let nos permite declarar variables
 // Al nombre de la variable también se le conoce como identificador
 // El operador de asignación (=) nos permite asignar un valor a la variable
-// El punto y coma ; indica el final de una línea (ponerlo es opcional pero es una práctica común)
+// El punto y coma indica el final de una línea (ponerlo es opcional pero es una práctica común)
 let miVariable;  // Se podría inicializar en la misma linea
 // Si no asignamos un valor a esta variable, su valor por default será undefined
 miVariable = 'Hola Mundo';  // Al valor se le conoce como literal y es de un tipo de dato
