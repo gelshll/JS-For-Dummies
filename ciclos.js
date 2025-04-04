@@ -27,3 +27,21 @@ Debido a que la condición está al final del bloque
 do {
     console.log(contador++);
 } while (contador <= repeticiones);
+
+// Ciclo for
+// Nos permite especificar cuantas veces queremos repetir un bloque de codigo
+// Su sintaxis es la palabra reservada for y entre parentesis la primera seccion
+// Donde vamos a poder declarar variables (como algun contador), pueden ser una o varias
+// Esta primera seccion solamente se va a ejecutar una vez en la primera iteración
+// Solamente en la primera iteración se van a crear estas variables
+// La siguiente sección es la condición a evaluar, mientras esta condicion sea verdadera el ciclo for seguirá ejecutandose
+// La ultima sección es para incrementar o decrementar (o cualquier expresión) la variable de la primera sección
+// Por ultimo entre llaves el bloque de codigo del ciclo for
+for (let contador=0; contador <= 19; i++) {
+    console.log(contador);
+}
+// El orden de la ejecución del ciclo for es la siguiente
+// En la primera ejecución se crean las variables como primer paso
+// Como segundo paso se evalúa la condición, como tercer paso se ejecuta el bloque de codigo del ciclo for
+// Como cuarto paso se incrementa o decrementa la variable segun el caso
+// Después de la primera iteracion se repiten los pasos dos, tres, cuatro en el mismo orden (el paso uno ya no se ejecuta)
