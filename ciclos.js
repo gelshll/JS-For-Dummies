@@ -37,7 +37,7 @@ do {
 // La siguiente sección es la condición a evaluar, mientras esta condicion sea verdadera el ciclo for seguirá ejecutandose
 // La ultima sección es para incrementar o decrementar (o cualquier expresión) la variable de la primera sección
 // Por ultimo entre llaves el bloque de codigo del ciclo for
-for (let contador = 0, let repeticiones = 10; contador <= repeticiones; contador++) {
+for (let contador = 0, let repeticiones = 19; contador <= repeticiones; contador++) {
     console.log(contador);
 }
 // El orden de la ejecución del ciclo for es la siguiente
